@@ -7,7 +7,7 @@ let UserSchema = new Schema({
     cellphone: { type: String, required: true },
     validator_code: { type: String },
     validator_time: { type: Date },
-    token: { type: String, unique: true },
+    token: { type: String },
     verified: { type: Boolean, default: false },
 }, {
     timestamps: true
