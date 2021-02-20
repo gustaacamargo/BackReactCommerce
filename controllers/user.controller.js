@@ -25,7 +25,7 @@ class UserController {
 		try {
             const email = await User.findOne({ email: req.body.email })
             if (email) {
-                res.status(400).json({ error: 'Email já cadastrado.' });
+                return res.status(400).json({ error: 'Email já cadastrado.' });
             }
             const user = await User.create(req.body);
             if (!user) return res.status(400).json({ error: 'Erro criação usuário.' });
