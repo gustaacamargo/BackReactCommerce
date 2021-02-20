@@ -7,12 +7,12 @@ let ProductSchema = new Schema({
     value: { type: Number, required: true },
     owner: { 
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'User',
         required: true
     },
     category: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'category',
+        ref: 'Category',
         required: true
     }
 }, {
