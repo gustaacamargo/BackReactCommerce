@@ -1,0 +1,18 @@
+{
+    "presets": ["es2015"],
+    "plugins": [
+      ["transform-object-rest-spread"],
+      ["babel-plugin-root-import", {
+        "paths": [
+          {
+            "rootPathPrefix": "~",
+            "rootPathSuffix": "src"
+          },
+          {
+            "rootPathPrefix": "__",
+            "rootPathSuffix": "admin"
+          }
+        ]
+      }]
+    ]
+  }
